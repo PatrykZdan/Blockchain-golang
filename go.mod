@@ -1,4 +1,4 @@
-module github/blockchain-golang
+module github.com/PatrykZdan/Blockchain-golang
 
 go 1.14
 
