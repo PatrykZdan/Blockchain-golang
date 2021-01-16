@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/PatrykZdan/Blockchain-golang/blockchain"
+	"strconv"
 )
 
 func main() {
@@ -16,5 +17,9 @@ func main() {
 		fmt.Printf("Previous Hash: %x\n", block.PrevHash)
 		fmt.Printf("Data in Block: %s\n", block.Data)
 		fmt.Printf("Hash: %x\n", block.Hash)
+
+		proof := blockchain.NewProof(block)
+		fmt.Printf("Pow: %s\n", strconv.FormatBool(proof.Validate()))
+		fmt.Println()
 	}
 }
