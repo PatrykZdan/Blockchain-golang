@@ -11,17 +11,13 @@ import (
 )
 
 // Take data from block
-
 // create a counter (nonce) which starts at 0
-
 // create a hash of data plus a counter
-
 // check the hash to see if it meets a set of requirements
-
 // Requirements
 // The first few bytes must contains 0s
 
-const Difficulty = 12
+const Difficulty = 18
 
 type ProofOfWork struct {
 	Block  *Block
